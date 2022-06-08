@@ -5,6 +5,7 @@ import Banner from '../components/Banner'
 import Header from '../components/Header'
 import requests from '../utils/requests'
 import {Movie} from '../typings'
+import Row from '../components/Row'
 interface Props {
   netflixOriginals: Movie[]
   trendingNow: Movie[]
@@ -39,10 +40,13 @@ const Home= ({
       </Head>
       
       <Header/>
-      <main>
+      <main className='relative pl-4 pb-24 lg:space-y-24 lg:pl-16'>
         <Banner netflixOriginals={netflixOriginals}/>
         <section>
-
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
         </section>
       </main>
     </div>
