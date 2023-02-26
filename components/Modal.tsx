@@ -61,7 +61,7 @@ function Modal() {
 
     fetchMovie()
   }, [movie])
-
+  console.log(movie);
 
 
   // Find all the movies in the user's list
